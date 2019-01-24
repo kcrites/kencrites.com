@@ -80,7 +80,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 60vh;
 }
 .cover {
     width: 17rem;
@@ -231,4 +231,9 @@ li {
 
 .card-title {
     font-weight: 700;
+}
+
+.card-img {
+    width: 208px;
+    height: 140.95px;
 }
