@@ -31,6 +31,12 @@ body {
     width: 100%;
     z-index: 99;
 }
+.sticky-bottom {
+    position: sticky;
+    bottom: 5px;
+    width: 100%;
+    z-index: 99;
+}
 .main-nav {
     display: flex;
     flex-flow: row wrap;
@@ -53,6 +59,9 @@ body {
     .main-nav {
         font-size: 0.5em;
         padding: 0;
+    }
+    .box {
+        font-size: .4em;
     }
 }
 
@@ -83,12 +92,7 @@ li {
     height: 60vh;
 }
 
-.photo_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-}
+
 .cover {
     width: 17rem;
 }
@@ -97,8 +101,15 @@ li {
 .grid-wrapper {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     color: #003399;
+}
+.photo-grid-wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    color: #003399;
+  
 }
 
 .box > a > img {
@@ -123,8 +134,48 @@ li {
     height: 30px;
 }
 
-.bottom-buffer {
+.grid-buffer-bottom {
     padding-bottom: 20px;
+}
+
+.grid-buffer-top {
+    padding-top: 60px;
+}
+
+.kcard {
+    transition: all 0.3s linear;
+}
+
+.kcard-btn {
+    align-self: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+ text-align: center;
+}
+
+.card-text {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-img {
+    width: 208px;
+    height: 140.95px;
+}
+
+.kactive {
+    color: #003399;
+    text-decoration: underline;
 }
 
 /* Footer */
@@ -220,39 +271,5 @@ li {
     background: #003399;
 }
 
-.kcard {
-    transition: all 0.3s linear;
-}
 
-.kcard-btn {
-    align-self: center;
-    align-content: center;
-    text-align: center;
-}
-
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
- text-align: center;
-}
-
-.card-text {
-    font-size: 1em;
-    font-weight: 600;
-}
-
-.card-title {
-    font-weight: 700;
-}
-
-.card-img {
-    width: 208px;
-    height: 140.95px;
-}
-
-.kactive {
-    color: #003399;
-    text-decoration: underline;
-}
 
