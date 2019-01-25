@@ -82,6 +82,13 @@ li {
     justify-content: center;
     height: 60vh;
 }
+
+.photo_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+}
 .cover {
     width: 17rem;
 }
@@ -107,16 +114,22 @@ li {
     text-align: center;
 }
 .grid-title {
-     grid-column: 1/-1;
-    
+    grid-column: 1/-1;  
     text-align: center;
     padding-top: .5em;
 }
 
+.social-img > a > img {
+    height: 30px;
+}
+
+.bottom-buffer {
+    padding-bottom: 20px;
+}
+
 /* Footer */
 .footer {
-    /* padding-top: .5em; */
-   
+    /* padding-top: .5em; */ 
     height: 5vh;
 }
 .footer-li {
@@ -237,3 +250,9 @@ li {
     width: 208px;
     height: 140.95px;
 }
+
+.kactive {
+    color: #003399;
+    text-decoration: underline;
+}
+
