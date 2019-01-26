@@ -181,7 +181,11 @@ li {
 /* Footer */
 .footer {
     /* padding-top: .5em; */ 
-    height: 5vh;
+    height: 30px;
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 .footer-li {
     padding: .5em;
@@ -195,6 +199,7 @@ li {
     font-size: 0.6em;
     margin: 0;
     padding: 0;
+    
 }
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
