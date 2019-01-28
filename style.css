@@ -126,6 +126,7 @@ li {
     margin: 20px;
     font-size: .7em;
     text-align: center;
+ 
     /* width: 350px; */
 }
 .grid-title {
@@ -135,7 +136,8 @@ li {
 }
 
 .social-img > a > img {
-    height: 30px;
+    /* height: 30px; */
+    width: 30px;
 }
 
 .grid-buffer-bottom {
@@ -148,6 +150,9 @@ li {
 
 .kcard {
     transition: all 0.3s linear;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c9c9c9;
 }
 
 .kcard-btn {
@@ -161,6 +166,10 @@ li {
 .btn-secondary:hover,
 .btn-secondary:focus {
  text-align: center;
+}
+
+.btn-block {
+    color: #003399;
 }
 
 .card-text {
