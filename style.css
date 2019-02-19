@@ -58,12 +58,39 @@ body {
     .main-nav {
         font-size: 0.5em;
         padding: 0;
+        order: 1;
     }
     .box {
         font-size: .4em;
+        
+    }
+    .photo-container{
+        order: 2;
+    }
+    .footer {
+        order: 3;
     }
 }
 
+
+@media only screen and (max-width: 500px) {
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+        order: 1;
+    }
+    .box {
+        font-size: .4em;
+        
+    }
+    .photo-container .container{
+       flex-direction: column;
+       order: 2;
+    }
+    .footer {
+        order: 3;
+    }
+}
 /* Push moves the element to the far right of the screen */
 .push {
     margin-right: auto;
@@ -112,7 +139,7 @@ li {
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     color: #003399;
-  
+   
 }
 
 .box > a > img {
