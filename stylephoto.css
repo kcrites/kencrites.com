@@ -2,10 +2,13 @@ body{
 	margin: 0px;
 }
 
-.container
+.photo-container
 { 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	/* flex-wrap: row; */
+	flex-flow: row wrap;
+	justify-content: space-around;
+	/* height: 130vh; */
+    padding-top: 80px;
 
 }
 h1{
@@ -19,14 +22,26 @@ h1{
 	margin-top: 10px;
 }
 
-img {
+.photo {
 	width: 450px;
 	height: 300px;
 	margin: 10px;
 	transition: all 1s;
 }
 
-img:hover{
+.photo:hover, .photo-portrait:hover, .photo-square:hover{
 	transform: scale(1.1);
 }
+.photo-portrait {
+	width: 300px;
+	height: 450px;
+	margin: 10px;
+	transition: all 1s;
+}
 
+.photo-square {
+	width: 450px;
+	height: 450px;
+	margin: 10px;
+	transition: all 1s;
+}
