@@ -134,13 +134,13 @@ li {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  color: #003399;
+  color: #007BFF;
 }
 .photo-grid-wrapper {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  color: #003399;
+  color: #007BFF;
 }
 
 .box > a > img {
